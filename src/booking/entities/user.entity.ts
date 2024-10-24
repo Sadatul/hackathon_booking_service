@@ -1,7 +1,7 @@
 import { Entity, Column, PrimaryGeneratedColumn, OneToMany, Index } from 'typeorm';
 import { BookingInfo } from './booking-info.entity';
 
-@Entity('users')
+@Entity('users', { name: 'users' })
 @Index('IDX_USER_EMAIL', ['email'])  // Index on email for faster lookups
 export class User {
   @PrimaryGeneratedColumn()
