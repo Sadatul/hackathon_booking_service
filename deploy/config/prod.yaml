@@ -1,0 +1,8 @@
+deployment:
+  name: hackathonbookingservice
+  replicas: 1
+  image: sadatul/hackathon_booking_service
+  tag: <!IMAGE>
+  port: 3002
+  host: api.prod.pinklifeline.xyz
+  database: database-instance-prod
